@@ -1,4 +1,4 @@
-const postModel = require("../models/postModel")
+orconst postModel = require("../models/postModel")
 
 // Create post Controller
 const createPostController = async (req,res) => {
@@ -9,7 +9,7 @@ const createPostController = async (req,res) => {
             res.status(500).send({
             success: false,
             message: 'Please Provide All Field',
-           
+            error
         })
         }
         const post = await postModel({
